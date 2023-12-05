@@ -25,7 +25,9 @@ extension DiamondView {
         path.line(to: NSPoint(x: startX + 22.0 , y: startY + 22.0 + ( CGFloat(myController!.lrightAlt) * 4.0)))
         path.line(to: NSPoint(x: startX  , y: startY + ( CGFloat(myController!.altitude) * 4.0)) )
 
- 
+        let transform = AffineTransform(scale: 2.0)
+        (transform as NSAffineTransform).set()
+        //path.transform(using: transform)
         NSColor.red.setStroke()
         path.stroke()
         NSColor.blue.setFill()
