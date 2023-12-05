@@ -45,7 +45,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                     /*
                      Lets see if we are really getting the altitude correctly, lets try to see if any are positive
                      
-                     */
+                   
                     var cancel = false
                     for x in 0..<self.mapObject.mapWidth {
                         for y in 0..<self.mapObject.mapHeight {
@@ -61,6 +61,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                             break
                         }
                     }
+                     */
                 }
             }
         }

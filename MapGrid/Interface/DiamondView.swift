@@ -19,15 +19,17 @@ extension DiamondView {
         NSBezierPath.fill(bounds)
         let startX = bounds.width/2.0
         let startY = bounds.height/2.0 - 22.0
-        path.move(to: NSPoint(x: startX, y:startY))
+        path.move(to: NSPoint(x: startX, y:startY + ( CGFloat(myController!.altitude) * 4.0)))
         path.line(to: NSPoint(x: startX - 22.0, y: startY + 22.0 + ( CGFloat(myController!.lleftAlt) * 4.0)))
         path.line(to: NSPoint(x: startX , y: startY + 44.0 + ( CGFloat(myController!.lAlt) * 4.0)))
         path.line(to: NSPoint(x: startX + 22.0 , y: startY + 22.0 + ( CGFloat(myController!.lrightAlt) * 4.0)))
-        path.line(to: NSPoint(x: startX  , y: startY ))
+        path.line(to: NSPoint(x: startX  , y: startY + ( CGFloat(myController!.altitude) * 4.0)) )
 
  
         NSColor.red.setStroke()
         path.stroke()
+        NSColor.blue.setFill()
+        path.fill()
         
         NSGraphicsContext.restoreGraphicsState()
     }
