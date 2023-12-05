@@ -22,6 +22,7 @@
 		56EFB2FA2B1EA1A500EEAD1F /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EFB2F92B1EA1A500EEAD1F /* Map.swift */; };
 		56EFB2FC2B1F75D600EEAD1F /* OpenMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EFB2FB2B1F75D600EEAD1F /* OpenMapController.swift */; };
 		56EFB2FE2B1F76A200EEAD1F /* OpenMapWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56EFB2FD2B1F76A200EEAD1F /* OpenMapWindow.xib */; };
+		56EFB3002B1F8D6D00EEAD1F /* DiamondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EFB2FF2B1F8D6D00EEAD1F /* DiamondView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		56EFB2F92B1EA1A500EEAD1F /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		56EFB2FB2B1F75D600EEAD1F /* OpenMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMapController.swift; sourceTree = "<group>"; };
 		56EFB2FD2B1F76A200EEAD1F /* OpenMapWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpenMapWindow.xib; sourceTree = "<group>"; };
+		56EFB2FF2B1F8D6D00EEAD1F /* DiamondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				56EFB2DC2B1E468B00EEAD1F /* BaseView.swift */,
+				56EFB2FF2B1F8D6D00EEAD1F /* DiamondView.swift */,
 				56EFB2DA2B1E413D00EEAD1F /* GridView.xib */,
 				56EFB2D82B1E412000EEAD1F /* GridViewController.swift */,
 				56EFB2FB2B1F75D600EEAD1F /* OpenMapController.swift */,
@@ -202,6 +205,7 @@
 			files = (
 				56EFB2E92B1E4A6300EEAD1F /* Number+extension.swift in Sources */,
 				56EFB2FA2B1EA1A500EEAD1F /* Map.swift in Sources */,
+				56EFB3002B1F8D6D00EEAD1F /* DiamondView.swift in Sources */,
 				56EFB2E62B1E4A1E00EEAD1F /* UOPHash.swift in Sources */,
 				56EFB2F52B1E702D00EEAD1F /* URL+extension.swift in Sources */,
 				56EFB2E52B1E4A1E00EEAD1F /* UOPAccess.swift in Sources */,

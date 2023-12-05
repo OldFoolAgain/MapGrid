@@ -42,6 +42,25 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                     self.xLoc = 0
                     self.yLoc = 0
                     self.gotoLocation(nil)
+                    /*
+                     Lets see if we are really getting the altitude correctly, lets try to see if any are positive
+                     
+                     */
+                    var cancel = false
+                    for x in 0..<self.mapObject.mapWidth {
+                        for y in 0..<self.mapObject.mapHeight {
+                            let (tileid,altitude) = self.mapObject.mapInfo(forX: x, Y: y)
+                            if (altitude >= 4) {
+                                Swift.print("TileID: \(tileid) X: \(x) Y: \(y) Altitude: \(altitude)")
+                                
+                                cancel = true
+                                break;
+                            }
+                        }
+                        if (cancel){
+                            break
+                        }
+                    }
                 }
             }
         }

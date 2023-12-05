@@ -7,6 +7,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="GridViewController" customModule="MapGrid" customModuleProvider="target">
             <connections>
+                <outlet property="diamondDisplay" destination="FaB-6t-7UP" id="GPy-Ei-eZy"/>
                 <outlet property="view" destination="c22-O7-iKe" id="F2g-i0-pA6"/>
             </connections>
         </customObject>
@@ -131,6 +132,13 @@
                         <binding destination="-2" name="value" keyPath="lrightAlt" id="YFW-sO-ZMh"/>
                     </connections>
                 </textField>
+                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FaB-6t-7UP" customClass="DiamondView" customModule="MapGrid" customModuleProvider="target">
+                    <rect key="frame" x="20" y="20" width="1248" height="292"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <connections>
+                        <outlet property="myController" destination="-2" id="a5p-iT-eLu"/>
+                    </connections>
+                </customView>
             </subviews>
             <constraints>
                 <constraint firstItem="mNd-aO-kgc" firstAttribute="firstBaseline" secondItem="n10-wm-N18" secondAttribute="firstBaseline" id="0BH-2s-y3v"/>
