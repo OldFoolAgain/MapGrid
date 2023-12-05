@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="22155" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22155"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="GridViewController" customModule="MapGrid" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="c22-O7-iKe" id="F2g-i0-pA6"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" customClass="BaseView" customModule="MapGrid" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="1288" height="361"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="n10-wm-N18">
+                    <rect key="frame" x="18" y="323" width="43" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Tile ID" id="G0S-Da-b7C">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mNd-aO-kgc">
+                    <rect key="frame" x="67" y="320" width="69" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="69" id="3LP-Eu-n5F"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="MaJ-yF-cOk">
+                        <numberFormatter key="formatter" formatterBehavior="custom10_4" numberStyle="decimal" allowsFloats="NO" usesGroupingSeparator="NO" formatWidth="-1" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" id="7xH-U7-wuL"/>
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="tileID" id="KxK-MP-xTS"/>
+                    </connections>
+                </textField>
+                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Aen-39-yuH">
+                    <rect key="frame" x="142" y="323" width="52" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Altitude" id="yKN-vC-3e3">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Pim-ra-Wkx">
+                    <rect key="frame" x="200" y="320" width="69" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="69" id="LSw-By-aQl"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="aaz-H8-qnb">
+                        <numberFormatter key="formatter" formatterBehavior="custom10_4" numberStyle="decimal" allowsFloats="NO" usesGroupingSeparator="NO" formatWidth="-1" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" id="Nbu-HN-VUy"/>
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="altitude" id="m1q-yV-LYl"/>
+                    </connections>
+                </textField>
+                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FmD-b1-BM8">
+                    <rect key="frame" x="275" y="323" width="119" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Lower Left Altitude" id="VgD-d4-2mC">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5HR-ib-ufL">
+                    <rect key="frame" x="400" y="320" width="69" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="69" id="TFN-bc-eYf"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="4J9-mg-PQ2">
+                        <numberFormatter key="formatter" formatterBehavior="custom10_4" numberStyle="decimal" allowsFloats="NO" usesGroupingSeparator="NO" formatWidth="-1" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" id="G5V-e0-ws8"/>
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="lleftAlt" id="vT0-Rs-xUa"/>
+                    </connections>
+                </textField>
+                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NgN-g8-0jO">
+                    <rect key="frame" x="475" y="323" width="95" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Lower  Altitude" id="dNz-h0-Mbh">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="s2w-kv-l7E">
+                    <rect key="frame" x="576" y="320" width="69" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="69" id="wCx-BL-iYt"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="4Iv-9d-04f">
+                        <numberFormatter key="formatter" formatterBehavior="custom10_4" numberStyle="decimal" allowsFloats="NO" usesGroupingSeparator="NO" formatWidth="-1" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" id="M9I-LC-RTX"/>
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="lAlt" id="jVu-jg-TXb"/>
+                    </connections>
+                </textField>
+                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tJw-ry-j1W">
+                    <rect key="frame" x="651" y="323" width="130" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Lower  Right Altitude" id="hzS-o6-fT5">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Fp5-ya-6vg">
+                    <rect key="frame" x="787" y="320" width="69" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="69" id="TbW-fX-epq"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="fwE-8c-1wD">
+                        <numberFormatter key="formatter" formatterBehavior="custom10_4" numberStyle="decimal" allowsFloats="NO" usesGroupingSeparator="NO" formatWidth="-1" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" id="BhO-K6-5as"/>
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="lrightAlt" id="YFW-sO-ZMh"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="mNd-aO-kgc" firstAttribute="firstBaseline" secondItem="n10-wm-N18" secondAttribute="firstBaseline" id="0BH-2s-y3v"/>
+                <constraint firstItem="tJw-ry-j1W" firstAttribute="leading" secondItem="s2w-kv-l7E" secondAttribute="trailing" constant="8" symbolic="YES" id="1QH-3d-JmG"/>
+                <constraint firstItem="FmD-b1-BM8" firstAttribute="leading" secondItem="Pim-ra-Wkx" secondAttribute="trailing" constant="8" symbolic="YES" id="1x6-22-wZS"/>
+                <constraint firstItem="Aen-39-yuH" firstAttribute="leading" secondItem="mNd-aO-kgc" secondAttribute="trailing" constant="8" symbolic="YES" id="Er9-pf-Q40"/>
+                <constraint firstItem="NgN-g8-0jO" firstAttribute="leading" secondItem="5HR-ib-ufL" secondAttribute="trailing" constant="8" symbolic="YES" id="G05-2i-Phn"/>
+                <constraint firstItem="Fp5-ya-6vg" firstAttribute="leading" secondItem="tJw-ry-j1W" secondAttribute="trailing" constant="8" symbolic="YES" id="LQU-dT-JcI"/>
+                <constraint firstItem="Fp5-ya-6vg" firstAttribute="firstBaseline" secondItem="n10-wm-N18" secondAttribute="firstBaseline" id="OJf-Kg-feQ"/>
+                <constraint firstItem="NgN-g8-0jO" firstAttribute="firstBaseline" secondItem="n10-wm-N18" secondAttribute="firstBaseline" id="UBC-Nf-4aM"/>
+                <constraint firstItem="s2w-kv-l7E" firstAttribute="leading" secondItem="NgN-g8-0jO" secondAttribute="trailing" constant="8" symbolic="YES" id="WRs-Ud-ju6"/>
+                <constraint firstItem="Pim-ra-Wkx" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="20" symbolic="YES" id="fTn-PU-Ixb"/>
+                <constraint firstItem="5HR-ib-ufL" firstAttribute="firstBaseline" secondItem="n10-wm-N18" secondAttribute="firstBaseline" id="gFn-3Z-uwo"/>
+                <constraint firstItem="5HR-ib-ufL" firstAttribute="leading" secondItem="FmD-b1-BM8" secondAttribute="trailing" constant="8" symbolic="YES" id="jES-J8-GvG"/>
+                <constraint firstItem="tJw-ry-j1W" firstAttribute="firstBaseline" secondItem="n10-wm-N18" secondAttribute="firstBaseline" id="joN-Gq-jiA"/>
+                <constraint firstItem="FmD-b1-BM8" firstAttribute="firstBaseline" secondItem="n10-wm-N18" secondAttribute="firstBaseline" id="l8E-Iz-VO4"/>
+                <constraint firstItem="Pim-ra-Wkx" firstAttribute="firstBaseline" secondItem="n10-wm-N18" secondAttribute="firstBaseline" id="mp0-dg-hpb"/>
+                <constraint firstItem="n10-wm-N18" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="20" symbolic="YES" id="oEY-bs-HTN"/>
+                <constraint firstItem="Pim-ra-Wkx" firstAttribute="leading" secondItem="Aen-39-yuH" secondAttribute="trailing" constant="8" symbolic="YES" id="ow9-Bd-D5x"/>
+                <constraint firstItem="s2w-kv-l7E" firstAttribute="firstBaseline" secondItem="n10-wm-N18" secondAttribute="firstBaseline" id="wxJ-YQ-BzV"/>
+                <constraint firstItem="Aen-39-yuH" firstAttribute="firstBaseline" secondItem="n10-wm-N18" secondAttribute="firstBaseline" id="xeE-ff-4Kr"/>
+                <constraint firstItem="mNd-aO-kgc" firstAttribute="leading" secondItem="n10-wm-N18" secondAttribute="trailing" constant="8" symbolic="YES" id="yib-jp-nzP"/>
+            </constraints>
+            <point key="canvasLocation" x="544" y="198.5"/>
+        </customView>
+        <userDefaultsController representsSharedInstance="YES" id="M3I-z1-luU"/>
+    </objects>
+</document>

@@ -10,6 +10,18 @@
 		56EFB2CC2B1E39CA00EEAD1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EFB2CB2B1E39CA00EEAD1F /* AppDelegate.swift */; };
 		56EFB2CE2B1E39CB00EEAD1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56EFB2CD2B1E39CB00EEAD1F /* Assets.xcassets */; };
 		56EFB2D12B1E39CB00EEAD1F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56EFB2CF2B1E39CB00EEAD1F /* MainMenu.xib */; };
+		56EFB2D92B1E412000EEAD1F /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EFB2D82B1E412000EEAD1F /* GridViewController.swift */; };
+		56EFB2DB2B1E413D00EEAD1F /* GridView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56EFB2DA2B1E413D00EEAD1F /* GridView.xib */; };
+		56EFB2DD2B1E468B00EEAD1F /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EFB2DC2B1E468B00EEAD1F /* BaseView.swift */; };
+		56EFB2E02B1E47D000EEAD1F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56EFB2DF2B1E47D000EEAD1F /* QuartzCore.framework */; };
+		56EFB2E52B1E4A1E00EEAD1F /* UOPAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EFB2E32B1E4A1E00EEAD1F /* UOPAccess.swift */; };
+		56EFB2E62B1E4A1E00EEAD1F /* UOPHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EFB2E42B1E4A1E00EEAD1F /* UOPHash.swift */; };
+		56EFB2E92B1E4A6300EEAD1F /* Number+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EFB2E82B1E4A6300EEAD1F /* Number+extension.swift */; };
+		56EFB2F32B1E701500EEAD1F /* UO-URL+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EFB2F22B1E701500EEAD1F /* UO-URL+extension.swift */; };
+		56EFB2F52B1E702D00EEAD1F /* URL+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EFB2F42B1E702D00EEAD1F /* URL+extension.swift */; };
+		56EFB2FA2B1EA1A500EEAD1F /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EFB2F92B1EA1A500EEAD1F /* Map.swift */; };
+		56EFB2FC2B1F75D600EEAD1F /* OpenMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EFB2FB2B1F75D600EEAD1F /* OpenMapController.swift */; };
+		56EFB2FE2B1F76A200EEAD1F /* OpenMapWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56EFB2FD2B1F76A200EEAD1F /* OpenMapWindow.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +30,18 @@
 		56EFB2CD2B1E39CB00EEAD1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56EFB2D02B1E39CB00EEAD1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		56EFB2D22B1E39CB00EEAD1F /* MapGrid.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MapGrid.entitlements; sourceTree = "<group>"; };
+		56EFB2D82B1E412000EEAD1F /* GridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
+		56EFB2DA2B1E413D00EEAD1F /* GridView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GridView.xib; sourceTree = "<group>"; };
+		56EFB2DC2B1E468B00EEAD1F /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		56EFB2DF2B1E47D000EEAD1F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		56EFB2E32B1E4A1E00EEAD1F /* UOPAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UOPAccess.swift; sourceTree = "<group>"; };
+		56EFB2E42B1E4A1E00EEAD1F /* UOPHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UOPHash.swift; sourceTree = "<group>"; };
+		56EFB2E82B1E4A6300EEAD1F /* Number+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Number+extension.swift"; sourceTree = "<group>"; };
+		56EFB2F22B1E701500EEAD1F /* UO-URL+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UO-URL+extension.swift"; sourceTree = "<group>"; };
+		56EFB2F42B1E702D00EEAD1F /* URL+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+extension.swift"; sourceTree = "<group>"; };
+		56EFB2F92B1EA1A500EEAD1F /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		56EFB2FB2B1F75D600EEAD1F /* OpenMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMapController.swift; sourceTree = "<group>"; };
+		56EFB2FD2B1F76A200EEAD1F /* OpenMapWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpenMapWindow.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56EFB2E02B1E47D000EEAD1F /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +61,7 @@
 			children = (
 				56EFB2CA2B1E39CA00EEAD1F /* MapGrid */,
 				56EFB2C92B1E39CA00EEAD1F /* Products */,
+				56EFB2DE2B1E47D000EEAD1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,12 +76,55 @@
 		56EFB2CA2B1E39CA00EEAD1F /* MapGrid */ = {
 			isa = PBXGroup;
 			children = (
+				56EFB2E72B1E4A4300EEAD1F /* essential */,
+				56EFB2E22B1E49BD00EEAD1F /* UOData */,
+				56EFB2E12B1E49A600EEAD1F /* Interface */,
 				56EFB2CB2B1E39CA00EEAD1F /* AppDelegate.swift */,
 				56EFB2CD2B1E39CB00EEAD1F /* Assets.xcassets */,
 				56EFB2CF2B1E39CB00EEAD1F /* MainMenu.xib */,
 				56EFB2D22B1E39CB00EEAD1F /* MapGrid.entitlements */,
 			);
 			path = MapGrid;
+			sourceTree = "<group>";
+		};
+		56EFB2DE2B1E47D000EEAD1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56EFB2DF2B1E47D000EEAD1F /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56EFB2E12B1E49A600EEAD1F /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				56EFB2DC2B1E468B00EEAD1F /* BaseView.swift */,
+				56EFB2DA2B1E413D00EEAD1F /* GridView.xib */,
+				56EFB2D82B1E412000EEAD1F /* GridViewController.swift */,
+				56EFB2FB2B1F75D600EEAD1F /* OpenMapController.swift */,
+				56EFB2FD2B1F76A200EEAD1F /* OpenMapWindow.xib */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		56EFB2E22B1E49BD00EEAD1F /* UOData */ = {
+			isa = PBXGroup;
+			children = (
+				56EFB2F92B1EA1A500EEAD1F /* Map.swift */,
+				56EFB2F22B1E701500EEAD1F /* UO-URL+extension.swift */,
+				56EFB2E32B1E4A1E00EEAD1F /* UOPAccess.swift */,
+				56EFB2E42B1E4A1E00EEAD1F /* UOPHash.swift */,
+			);
+			path = UOData;
+			sourceTree = "<group>";
+		};
+		56EFB2E72B1E4A4300EEAD1F /* essential */ = {
+			isa = PBXGroup;
+			children = (
+				56EFB2F42B1E702D00EEAD1F /* URL+extension.swift */,
+				56EFB2E82B1E4A6300EEAD1F /* Number+extension.swift */,
+			);
+			path = essential;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +156,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = "Charles Kerr";
 				TargetAttributes = {
 					56EFB2C72B1E39CA00EEAD1F = {
 						CreatedOnToolsVersion = 15.0.1;
@@ -118,6 +188,8 @@
 			files = (
 				56EFB2CE2B1E39CB00EEAD1F /* Assets.xcassets in Resources */,
 				56EFB2D12B1E39CB00EEAD1F /* MainMenu.xib in Resources */,
+				56EFB2FE2B1F76A200EEAD1F /* OpenMapWindow.xib in Resources */,
+				56EFB2DB2B1E413D00EEAD1F /* GridView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +200,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56EFB2E92B1E4A6300EEAD1F /* Number+extension.swift in Sources */,
+				56EFB2FA2B1EA1A500EEAD1F /* Map.swift in Sources */,
+				56EFB2E62B1E4A1E00EEAD1F /* UOPHash.swift in Sources */,
+				56EFB2F52B1E702D00EEAD1F /* URL+extension.swift in Sources */,
+				56EFB2E52B1E4A1E00EEAD1F /* UOPAccess.swift in Sources */,
+				56EFB2DD2B1E468B00EEAD1F /* BaseView.swift in Sources */,
+				56EFB2F32B1E701500EEAD1F /* UO-URL+extension.swift in Sources */,
+				56EFB2D92B1E412000EEAD1F /* GridViewController.swift in Sources */,
+				56EFB2FC2B1F75D600EEAD1F /* OpenMapController.swift in Sources */,
 				56EFB2CC2B1E39CA00EEAD1F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
